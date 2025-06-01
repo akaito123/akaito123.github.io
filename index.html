@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EDEN ZOO </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    header {
+      background-color: #1db954;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    nav {
+      background-color: #0f0f0f;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #1db954;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .highlight {
+      color: #1db954;
+      font-weight: bold;
+    }
+    footer {
+      background-color: #0f0f0f;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>EDEN ZOO</h1>
+    <p><em>“Onde a natureza encontra a fantasia”</em></p>
+  </header>
+
+  <nav>
+    <a href="#missao">Missão</a>
+    <a href="#visao">Visão</a>
+    <a href="#valores">Valores</a>
+    <a href="#reservas">Reserva de Ingressos</a>
+    <a href="#catalogo">Catalogo</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="missao">
+    <h2 class="highlight">Missão</h2>
+    <p>Oferecer entretenimento de forma educativa e responsável, promovendo a pesquisa científica de espécies e ambientes naturais. Nosso zoológico também conscientiza o público sobre os impactos das ações humanas no meio ambiente. Toda renda é reinvestida em pesquisas e na preservação do espaço.</p>
+  </section>
+
+  <section id="visao">
+    <h2 class="highlight">Visão</h2>
+    <p>Ser referência nacional em entretenimento ambiental e pesquisa científica nos próximos 5 a 10 anos, unindo o universo Pokémon à conservação real da natureza.</p>
+  </section>
+
+  <section id="valores">
+    <h2 class="highlight">Valores</h2>
+    <ul>
+      <li>Respeito à vida e à biodiversidade</li>
+      <li>Educação ambiental</li>
+      <li>Ética na pesquisa</li>
+      <li>Inovação no entretenimento</li>
+      <li>Sustentabilidade</li>
+    </ul>
+  </section>
+
+<section id="reservas" style="padding: 50px; background-color: #f1f1f1;">
+  <h2 style="text-align: center; color: #333;">Reserva de Ingressos</h2>
+  
+  <div style="max-width: 600px; margin: 0 auto; background-color: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <form action="mailto:seuemail@dominio.com?subject=Reserva de Ingressos" method="POST" enctype="multipart/form-data">
+      <!-- Nome do Cliente -->
+      <div style="margin-bottom: 15px;">
+        <label for="nome" style="font-weight: bold; color: #333;">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+      </div>
+
+      <!-- E-mail -->
+      <div style="margin-bottom: 15px;">
+        <label for="email" style="font-weight: bold; color: #333;">E-mail:</label>
+        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+      </div>
+
+      <!-- Quantidade de Ingressos -->
+      <div style="margin-bottom: 15px;">
+        <label for="quantidade" style="font-weight: bold; color: #333;">Quantidade de Ingressos:</label>
+        <input type="number" id="quantidade" name="quantidade" min="1" max="10" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+      </div>
+
+      <!-- Data da Visita -->
+      <div style="margin-bottom: 15px;">
+        <label for="data" style="font-weight: bold; color: #333;">Data da Visita:</label>
+        <input type="date" id="data" name="data" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+      </div>
+
+      <!-- Botão de Enviar -->
+      <div style="text-align: center;">
+        <button type="submit" style="background-color: #1db954; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Reservar Ingressos</button>
+      </div>
+    </form>
+  </div>
+  
+</section>
+
+
+<section id="catalogo" style="padding: 50px; background-color: #f9f9f9;">
+  <h2 style="text-align: center; color: #333;">Catálogo Pokémon</h2>
+  
+  <div class="produtos" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    
+    <!-- Produto 1: Pelúcia Pikachu -->
+    <div class="produto" style="width: 250px; border: 2px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; background-color: #fff;">
+      <img src="https://down-br.img.susercontent.com/file/sg-11134201-7qvej-ljb8li213tal39.webp" alt="Pelúcia Pikachu" style="width: 100%; border-radius: 8px;">
+      <h3 style="color: #ffcc00;">Pelúcia Pikachu</h3>
+      <p style="color: #555;">R$ 59,99</p>
+      <a href="https://shopee.com.br/50cm-Pokemon-Pikachu-Brinquedo-De-Pel%C3%BAcia-Kawaii-Anime-Japon%C3%AAs-Elfo-Desenho-Boneca-Anivers%C3%A1rio-Presente-Para-Crian%C3%A7as-Menina-i.826890465.22291959281?sp_atk=269d4079-5ab7-4bf0-a9c4-3f18d4a6e862&xptdk=269d4079-5ab7-4bf0-a9c4-3f18d4a6e862" target="_blank">
+        <button style="background-color: #1db954; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+      </a>
+    </div>
+
+    <!-- Produto 2: Chaveiro Charmander -->
+    <div class="produto" style="width: 250px; border: 2px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; background-color: #fff;">
+      <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rffs-m49hskrb7sl6e3.webp" alt="Chaveiro Charmander" style="width: 100%; border-radius: 8px;">
+      <h3 style="color: #ffcc00;">Chaveiro Charmander</h3>
+      <p style="color: #555;">R$ 19,00</p>
+      <a href="https://shopee.com.br/Chaveiro-Charmander-3D-Pokemon-Anime-Geek-Nerd-i.846667375.23693606760?sp_atk=048cbac1-2cca-4419-9a17-1776d796c280&xptdk=048cbac1-2cca-4419-9a17-1776d796c280" target="_blank">
+        <button style="background-color: #1db954; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+      </a>
+    </div>
+
+    <!-- Produto 3: Pelúcia Bulbasaur -->
+    <div class="produto" style="width: 250px; border: 2px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; background-color: #fff;">
+      <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lngn8vpkdcbt71.webp" alt="Pelúcia Bulbasaur" style="width: 100%; border-radius: 8px;">
+      <h3 style="color: #ffcc00;">Pelúcia Bulbasaur</h3>
+      <p style="color: #555;">R$ 41,28</p>
+      <a href="https://shopee.com.br/Bulbasaur-Pel%C3%BAcia-Pok%C3%A9mon-Original-18cm-Antial%C3%A9rgico-i.1015037485.22992592294?sp_atk=56e76c60-485d-4c82-9377-eda69dcaafda&xptdk=56e76c60-485d-4c82-9377-eda69dcaafda" target="_blank">
+        <button style="background-color: #1db954; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+      </a>
+    </div>
+
+    <!-- Produto 4: Chaveiro Squirtle -->
+    <div class="produto" style="width: 250px; border: 2px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; background-color: #fff;">
+      <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-m6fvh4d5qrmv56.webp" alt="Chaveiro Squirtle" style="width: 100%; border-radius: 8px;">
+      <h3 style="color: #ffcc00;">Chaveiro Squirtle</h3>
+      <p style="color: #555;">R$ 12,90</p>
+      <a href="https://shopee.com.br/Chaveiro-Squirtle-Pokemon-Emborrachados-Geek-Nerd-Colecion%C3%A1vel-i.404716638.23198213172?sp_atk=dc0e5ab3-0ce4-4cc0-8af0-ef051d896886&xptdk=dc0e5ab3-0ce4-4cc0-8af0-ef051d896886" target="_blank">
+        <button style="background-color: #1db954; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+      </a>
+    </div>
+
+   <!-- Produto 5: Pelúcia Leafeon -->
+    <div class="produto" style="width: 250px; border: 2px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; background-color: #fff;">
+      <img src="https://down-br.img.susercontent.com/file/sg-11134201-7rbk0-lkrbm4zqsrqo08.webp" alt="Pelúcia Leafeon" style="width: 100%; border-radius: 8px;">
+      <h3 style="color: #ffcc00;">Pelúcia Leafeon</h3>
+      <p style="color: #555;">R$ 63,90</p>
+      <a href="https://shopee.com.br/Leafeon-de-Pel%C3%BAcia-Pok%C3%A9mon-de-Pel%C3%BAcia-Eevee-Evolution-Linnea-i.646053031.20998872150?sp_atk=594f3f5f-27dc-48b2-96bc-c77f375dd41a&xptdk=594f3f5f-27dc-48b2-96bc-c77f375dd41a"_blank">
+        <button style="background-color: #1db954; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+      </a>
+    </div>
+
+<!-- Produto 6: Chaveiro Leafeon -->
+    <div class="produto" style="width: 250px; border: 2px solid #ddd; border-radius: 8px; padding: 20px; text-align: center; background-color: #fff;">
+      <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lyaa0cagt8d13f.webp" alt="Chaveiro Leafeon" style="width: 100%; border-radius: 8px;">
+      <h3 style="color: #ffcc00;">Chaveiro Leafeon</h3>
+      <p style="color: #555;">R$ 15,99</p>
+      <a href="https://shopee.com.br/Chaveiro-Pokemon-Eevee-Evolution-Eevee-Jolteon-Vaporeon-Flareon-Espeon-Umbreon-Sylveon-Glaceon-Leafon-i.238046623.20899307691?sp_atk=8e4a7687-c0b9-454b-8969-7ed439fc40f5&xptdk=8e4a7687-c0b9-454b-8969-7ed439fc40f5_blank">
+        <button style="background-color: #1db954; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Comprar</button>
+      </a>
+    </div>
+
+
+  </div>
+
+  <!-- Botão "Mais Produtos" -->
+  <div style="text-align: center; margin-top: 30px;">
+    <a href="https://shopee.com.br/search?keyword=pokemon" target="_blank">
+      <button style="background-color: #ffcc00; color: #fff; padding: 15px 30px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+        Mais Produtos
+      </button>
+    </a>
+  </div>
+  
+</section>
+
+
+  <section id="localizacao">
+  <h2 class="highlight">Localização</h2>
+  <p>📍 São Paulo, SP – Antigo Zoológico de São Paulo</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.7011175489347!2d-46.62302442550697!3d-23.650872478738382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5b3001f4883d%3A0xb7f1ba1b449ce36a!2sZool%C3%B3gico%20de%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1746930826066!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+
+  <section id="contato">
+    <h2 class="highlight">Contato</h2>
+    <p>Email: edenzoo@contato.com</p>
+    <p>Instagram: @edenzoo</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 EDEN ZOO. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
